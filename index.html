@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GharBari - Security</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c36;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #1e2128;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 2px solid #4CAF50;
+            margin: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        h1, h2, p {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            animation: fadeIn 1s forwards;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            animation: fadeIn 1s 0.5s forwards;
+        }
+
+        strong {
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #bbb;
+            animation: fadeIn 1s 1s forwards;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: underline;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #2E8540;
+        }
+
+        .arrow {
+            display: inline-block;
+            margin-left: 5px;
+            animation: arrowAnimation 1s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes arrowAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        @keyframes colorChange {
+            0%, 100% {
+                color: #4CAF50;
+            }
+            50% {
+                color: #2E8540;
+            }
+        }
+
+        .app-logo {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .hyperlink {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>GharBari - Security</h1>
+
+        <h2>1. Data Protection:</h2>
+
+        <p>a. <strong>User Data Encryption:</strong><br>
+           We employ state-of-the-art encryption techniques to protect your personal information and ensure secure data transmission.</p>
+
+        <p>b. <strong>Secure Servers:</strong><br>
+           Our servers are hosted in secure data centers with strict access controls, ensuring the safety and integrity of your data.</p>
+
+        <h2>2. Account Security:</h2>
+
+        <p>a. <strong>Password Protection:</strong><br>
+           Your account password is securely stored using industry-standard hashing algorithms to prevent unauthorized access.</p>
+
+        <p>b. <strong>Two-Factor Authentication (2FA):</strong><br>
+           Enhance your account security with optional two-factor authentication for an additional layer of protection.</p>
+
+        <h2>3. App Access Control:</h2>
+
+        <p>a. <strong>Role-Based Access:</strong><br>
+           Access to sensitive features within the app is restricted based on user roles, ensuring proper authorization.</p>
+
+        <p>b. <strong>Session Management:</strong><br>
+           We implement secure session management to protect against unauthorized access and session hijacking.</p>
+
+        <h2>4. Continuous Monitoring:</h2>
+
+        <p>a. <strong>Security Audits:</strong><br>
+           Regular security audits and vulnerability assessments are conducted to identify and address potential security risks.</p>
+
+        <p>b. <strong>Incident Response:</strong><br>
+           In the event of a security incident, our dedicated response team is ready to take immediate action to mitigate and resolve the issue.</p>
+
+        <h2>5. Contact Information:</h2>
+
+        <p>For any security-related concerns or inquiries, please contact our security team at <a href="mailto:security@gharbari.com">security@gharbari.com</a>.</p>
+
+        <h2>6. Security Updates:</h2>
+
+        <p>GharBari is committed to maintaining a high level of security. We regularly update our security protocols and practices to address emerging threats and vulnerabilities.</p>
+
+        <img class="app-logo" src="your-logo.png" alt="GharBari Logo">
+
+        <div class="hyperlink">
+            <a href="https://www.example.com" target="_blank">Visit our website for more information</a>
+        </div>
+
+        <div class="arrow" onclick="window.location.href='https://www.example.com'">&#8595;</div>
+
+    </div>
+
+    <script>
+        // Dynamic color change animation for the arrow
+        document.querySelector('.arrow').addEventListener('mouseover', function () {
+            this.style.animation = 'colorChange 0.3s ease-in-out infinite';
+        });
+
+        document.querySelector('.arrow').addEventListener('mouseout', function () {
+            this.style.animation = 'arrowAnimation 1s infinite';
+        });
+    </script>
+
+</body>
+</html>
